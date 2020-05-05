@@ -1,0 +1,18 @@
+/* components/xw-tab-control/xw-tab-control.wxss */
+  .tab-control {
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex; 
+    font-size: 32rpx;
+    font-weight: 600;
+    background-color:#fff;
+  }
+  .tab-item {
+    flex: 1;
+    text-align: center;
+  }
+  .active text {
+    color: #ff5777;
+    padding: 10rpx;
+    border-bottom: solid 6rpx #ff5777;
+  }

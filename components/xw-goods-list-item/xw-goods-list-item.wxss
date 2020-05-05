@@ -1,0 +1,41 @@
+/* components/xw-goods-list-item/xw-goods-list-item.wxss */
+.item {
+/* 父组件的相对定位relative设置在xw-goods-list组件中 */
+  width: 100%;
+  font-size: 27rpx;
+  padding-bottom: 100rpx;
+  line-height: 27rpx;
+  text-align: center;
+  color: #888;
+}
+.item image {
+  width: 350rpx;
+  border-radius: 10rpx;
+}
+.item .info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10rpx;
+}
+.info .title {
+  margin: 0 8rpx;
+  line-height: 1.5;
+  overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;/*超出部分省略号显示*/
+}
+.price, 
+.cfav {
+  display: inline-block;
+}
+.price {
+  color: #ff5777;
+}
+.info image {
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  top: 6rpx;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,15 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart">
+  <scroll-view class="scroll-view"
+               scroll-y
+               scroll-with-animation>
+  <view wx:for="{{cartList}}" wx:key="index">
+    <cart-item cartItem="{{item}}" 
+               index="{{index}}"
+               data-index="{{index}}"/>
+  </view>
+  </scroll-view>
+  <bottom-bar selectAll="{{selectAll}}"
+              totalPrice="{{totalPrice}}"
+              totalCount="{{totalCount}}" />
+</view>

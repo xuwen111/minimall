@@ -1,0 +1,31 @@
+/* pages/detail/childCpns/detail-info/detail-info.wxss */
+.content {
+  color: #888;
+  margin-bottom: 20rpx;
+}
+.desc {
+  margin: 15rpx 10rpx;
+  font-size: 30rpx;
+  line-height: 1.5;
+  text-indent: 2em;
+}
+.top {
+  height: 5rpx;
+  width: 250rpx;
+  margin-left: 10rpx;
+  border-top: solid 4rpx pink;
+}
+.bottom {
+  height: 5rpx;
+  width: 250rpx;
+  margin-left: 480rpx;
+  border-bottom: solid 4rpx pink;
+}
+.image-key {
+  text-align: center;
+  font-size: 30rpx;
+  margin: 30rpx 0 20rpx 0;
+}
+.image {
+  margin-left: 15rpx;
+}

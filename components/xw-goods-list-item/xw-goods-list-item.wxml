@@ -1,0 +1,10 @@
+<!--components/xw-goods-list-item/xw-goods-list-item.wxml-->
+<view class="item" bindtap="goodsItemClick">
+  <image src="{{goodsItem.show.img || goodsItem.image}}" mode="widthFix"/>
+  <view class="info">
+    <view class="title">{{goodsItem.title}}</view>
+    <view class="price">￥{{goodsItem.price}}</view>
+    <image src="/assets/detail/collect.png" />
+    <view class="cfav">{{goodsItem.cfav}}</view>
+  </view>
+</view>

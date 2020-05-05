@@ -1,0 +1,4 @@
+<!--components/xw-back-top/xw-back-top.wxml-->
+<view class="back-top" bindtap="handleBackTop">
+  <image src="/assets/top.png" mode="widthFix" />
+</view>

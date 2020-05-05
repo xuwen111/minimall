@@ -1,0 +1,33 @@
+<!--pages/detail/childCpns/detail-base-info/detail-base-info.wxml-->
+<view class="base-info">
+  <!-- 1.商品标题 -->
+  <view class="title">
+    {{baseInfo.title}}
+  </view>
+  <!-- 2.价格信息 -->
+  <view class="price-info">
+    <text class="price">￥{{baseInfo.price}}</text>
+    <text class="old-price">{{baseInfo.oldPrice}}</text>
+    <text class="discount" >{{baseInfo.discount}}</text>
+  </view>
+  <!-- 3.销量、收藏信息 -->
+  <view class="liked">
+    <view class="liked-item"
+        wx:for="{{baseInfo.columns}}" 
+        wx:key="index"
+        hidden="{{index>1}}" >
+    {{item}}
+    </view>
+    <view class="liked-item">
+      <image class="icon" src="{{baseInfo.services[baseInfo.services.length-1].icon}}" mode="widthFix"/>
+      {{baseInfo.services[baseInfo.services.length-1].name}}
+    </view>
+  </view>
+  <!-- 4.services信息 -->
+  <view class="services">
+    <view class="services-item" wx:for="{{baseInfo.services}}" wx:key="index" hidden="{{index>2}}">
+      <image class="icon" src="{{item.icon}}" hidden="{{!item.icon}}" mode="widthFix"/>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

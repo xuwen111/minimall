@@ -1,0 +1,56 @@
+/* pages/detail/childCpns/detail-comment/detail-comment.wxss */
+.content {
+  border-top: solid 15rpx #eee;
+  border-bottom: solid 15rpx #eee;
+  line-height: 1.5;
+}
+.title {
+  margin: 40rpx 0 40rpx 20rpx;
+  font-weight: 600;
+}
+.more {
+  margin-left: 355rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.user-info {
+  margin-left: 15rpx;
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 10rpx
+}
+.user-name {
+  color: #ff5777;
+}
+.extrol-info {
+  margin: 20rpx 0 20rpx 25rpx;
+  font-size: 26rpx;
+}
+.extrol-info .time {
+  margin-right: 10rpx;
+}
+.comment {
+  margin-left: 15rpx;
+  margin-bottom: 15rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.extra-item {
+  margin: 0 0 15rpx 15rpx;
+  font-size: 26rpx;
+  color: #ff5777;
+}
+.image-item {
+  margin-left: 15rpx;
+}
+.image-item image {
+  width: 50%;
+}
+.white {
+  height: 40rpx;
+}

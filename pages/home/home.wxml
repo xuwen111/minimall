@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <scroll-view class='scroll-content' 
+              scroll-y 
+              bindscrolltolower="loadMore"
+              scroll-with-animation="true"
+              scroll-top="{{topPosition}}"
+              bindscroll="scrollPosition">
+    <!-- 1.轮播图 -->
+    <xw-swiper list="{{banners}}" />
+    <!-- 2.推荐数据 -->
+    <home-recommend list="{{recommend}}" bind:imageLoad="imageLoad"/>
+    <!-- 3.本周流行 -->
+    <view class="feature">
+      <image src="/assets/home/feature.png" mode="widthFix"/>
+    </view>
+    <!-- 4.1tab-control工具栏 -->
+    <xw-tab-control class="tab-control1" titles="{{titles}}" bind:handleClickItem="handleClickItem" />
+    <view hidden="{{!showTabTwo}}">
+      <xw-tab-control class="tab-control2" 
+                    titles="{{titles}}" 
+                    bind:handleClickItem="handleClickItem"/> 
+    </view>
+    <!-- 5.goodslist展示商品 -->
+    <xw-goods-list goods="{{goods[currentType].list}}" />
+    <!-- 6.回到顶部 -->
+    <xw-back-top class="goods-list" wx:if="{{showBackTop}}" bindtap="handleBackTop" />
+  </scroll-view>  
+</view>

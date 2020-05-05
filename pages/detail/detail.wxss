@@ -1,0 +1,22 @@
+/* pages/detail/detail.wxss */
+.detail {
+  height: 100vh;
+}
+.scroll-view {
+  height: calc(100% - 88rpx - 98rpx);
+}
+.detail-swiper  swiper{
+  height: 700rpx;
+}
+.recommendInfo {
+  margin: 30rpx 0 15rpx 0;
+  text-align: center;
+}
+.recommendInfo .text {
+  background-color: #ff5777;
+  color: #fff;
+  padding: 5rpx 120rpx;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}

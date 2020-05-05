@@ -1,0 +1,50 @@
+/* pages/detail/childCpns/detail-base-info/detail-base-info.wxss */
+.title {
+  margin: 10rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+.price-info {
+  margin: 20rpx 0 20rpx 15rpx;
+}
+.price {
+  color: #ff5777;
+}
+.old-price {
+  margin-left: 6rpx;
+  font-size: 24rpx;
+  text-decoration: line-through;
+}
+.discount {
+  display: inline-block;
+  margin-left: 20rpx;
+  padding: 4rpx 20rpx;
+  font-size: 26rpx;
+  background-color: #f13e3a;
+  color: #fff;
+  border-radius: 10rpx;
+}
+.liked {
+  display: flex;
+  margin: 20rpx 0 20rpx 30rpx;
+  color: #666;
+}
+.liked-item {
+  flex: 1;
+  font-size: 28rpx;
+}
+.services {
+  display: flex;
+  padding: 20rpx 0 20rpx 15rpx;
+  font-size: 28rpx;
+  border-top: solid 2rpx #eee;
+  border-bottom: solid 2rpx #eee;
+}
+.services-item {
+  flex: 1;
+  margin-left: 10rpx;
+}
+.icon {
+  width: 10%;
+  margin-right: 8rpx;
+}

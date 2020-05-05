@@ -1,0 +1,38 @@
+<!--pages/detail/childCpns/detail-comment/detail-comment.wxml-->
+<!-- 导入format.wxs文件,使用format -->
+<wxs src="../../../../wxs/format.wxs" module="format" />
+
+<view class="content">
+  <view class="title">
+    全部评价({{detailComments.cRate}})
+    <text class="more">==更多评价</text>
+  </view>
+  <block wx:for="{{detailComments.list}}" wx:key="index">
+    <view class="comment-item">
+      <!-- 1.用户信息 -->
+      <view class="user-info">
+        <image class="avatar" src="{{item.user.avatar}}" />
+        <text class="user-name">{{item.user.uname}}</text>
+      </view>
+      <!-- 2.购买信息 -->
+      <view class="extrol-info">
+        <text class="time">{{format.dateFormat(item.created, 'yyyy-MM-dd')}}</text>
+        <text class="style">[{{item.style}}]</text>
+      </view>
+      <!-- 3.评价内容 -->
+      <view class="comment">{{item.content}}</view>
+      <!-- 4.附加评价 -->
+      <block wx:for="{{item.extraInfo}}" wx:key="index">
+        <view class="extra-item">[{{item}}]</view>
+      </block>
+      <!-- 5.评价晒图 -->
+      <block wx:for="{{item.images}}" wx:key="index">
+        <view class="image-item">
+          <image src="{{item}}" mode="widthFix" />
+        </view>
+      </block>
+    </view>
+  </block>
+
+  <view class="white"></view>
+</view>

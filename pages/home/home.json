@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "xw-swiper": "/components/xw-swiper/xw-swiper",
+    "home-recommend": "./childCpns/home-recommend/home-recommend",
+    "xw-tab-control": "/components/xw-tab-control/xw-tab-control",
+    "xw-goods-list": "/components/xw-goods-list/xw-goods-list",
+    "xw-back-top": "/components/xw-back-top/xw-back-top"
+  },
+  "navigationBarTitleText": "购物街"
+}

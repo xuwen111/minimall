@@ -1,0 +1,48 @@
+/* pages/detail/childCpns/detail-params/detail-params.wxss */
+.content {
+  line-height: 1.5;
+}
+.info-key {
+  background-color: pink;
+  color: #fff;
+  padding: 2rpx 20rpx;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+}
+.set-item {
+  margin: 30rpx 0;
+}
+.product-item {
+  display: flex;
+  margin: 5rpx 20rpx 5rpx 20rpx;
+}
+.product-item,
+.size-item {
+  padding: 5rpx 0;
+  font-size: 28rpx;
+  color: #888;
+  border-bottom: solid 2rpx #eee;
+}
+.product-item .key {
+  width: 14%;
+}
+.product-item .value {
+  flex: 1;
+}
+.size-table {
+  margin: 30rpx 0 30rpx 20rpx;
+}
+.s-info {
+  width: 60%;
+  display: flex;
+}
+.size-item {
+  flex: 1;
+}
+.params-text {
+  margin-left: 15rpx;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  color: #ff5777;
+  padding-bottom: 60rpx;
+}

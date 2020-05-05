@@ -1,0 +1,30 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <xw-tab-control class="titles" titles="{{titles}}"/>
+  <scroll-view class="scroll-view"
+               scroll-y 
+               bindscrolltolower="loadMore"
+               scroll-with-animation="true"
+               scroll-top="{{topPosition}}"
+               bindscroll="scrollPosition">
+    <!-- 1.商品详情轮播图 -->
+    <xw-swiper list="{{swiperImages}}" class="detail-swiper" />
+    <!-- 2.商品基本信息 -->
+    <detail-base-info baseInfo="{{baseInfo}}" />
+    <!-- 3.店铺信息 -->
+    <shop-info shopInfo="{{shopInfo}}" />
+    <!-- 4.商品详情信息 -->
+    <detail-info detailInfo="{{detailInfo}}" />
+    <!-- 5.商品参数信息 -->
+    <detail-params detailParams="{{detailParams}}" />
+    <!-- 6.商品评价 -->
+    <detail-comment detailComments="{{detailComments}}" />
+    <!-- 7.推荐商品信息 -->
+    <view class="recommendInfo">
+      <text class="text">猜你喜欢</text>
+    </view>
+    <xw-goods-list goods="{{detailRecommend}}" />
+  </scroll-view>
+  <!-- 8.底部栏 -->
+  <bottom-bar bind:addToCart="addCart" />
+</view> 

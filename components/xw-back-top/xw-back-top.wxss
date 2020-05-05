@@ -1,0 +1,13 @@
+/* components/xw-back-top/xw-back-top.wxss */
+.back-top {
+  position: fixed;
+  right: 20rpx;
+  bottom: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.back-top image {
+  width: 100%;
+}

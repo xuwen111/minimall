@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "xw-tab-control": "/components/xw-tab-control/xw-tab-control",
+    "xw-swiper": "/components/xw-swiper/xw-swiper",
+    "detail-base-info": "./childCpns/detail-base-info/detail-base-info",
+    "shop-info": "./childCpns/shop-info/shop-info",
+    "detail-info": "./childCpns/detail-info/detail-info",
+    "detail-params": "./childCpns/detail-params/detail-params",
+    "detail-comment": "./childCpns/detail-comment/detail-comment",
+    "xw-goods-list": "/components/xw-goods-list/xw-goods-list",
+    "bottom-bar": "./childCpns/bottom-bar/bottom-bar"
+  },
+  "navigationBarTitleText": "商品详情"
+}

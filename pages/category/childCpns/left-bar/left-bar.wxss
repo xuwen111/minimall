@@ -1,0 +1,15 @@
+/* pages/category/childCpns/left-bar/left-bar.wxss */
+.s-content {
+  height: 100vh;
+}
+.item {
+  text-align: center;
+  padding: 25rpx 0;
+  color: #888;
+  border-left: solid 10rpx #eee;
+}
+.active {
+  color: #ff5777;
+  font-weight: 700;
+  border-left: solid 10rpx #ff5777;
+}

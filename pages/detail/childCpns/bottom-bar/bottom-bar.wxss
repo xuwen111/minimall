@@ -1,0 +1,43 @@
+/* pages/detail/childCpns/bottom-bar/bottom-bar.wxss */
+.content {
+  display: flex;
+  height: 98rpx;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+.ask image,
+.shop image,
+.collect image {
+  width: 45rpx;
+  height: 45rpx;
+}
+.left {
+  margin-left: 15rpx;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.left .ask,
+.left .shop,
+.left .collect {
+  flex: 1;
+  font-size: 24rpx;
+}
+.right {
+  width: 55%;
+  display: flex;
+  line-height: 98rpx;
+  color: #fff;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+.right .addCart {
+  flex: 1;
+  background-color: orange;
+  border-radius: 10rpx;
+}
+.right .toBuy {
+  width: 40%;
+  background-color: pink;
+  border-radius: 10rpx;
+}

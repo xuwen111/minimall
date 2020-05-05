@@ -1,0 +1,32 @@
+<!--pages/detail/childCpns/detail-params/detail-params.wxml-->
+<view class="content">
+<!-- 1.商品数据 -->
+  <view class="product-info">
+    <text class="info-key"> {{detailParams.info.key}}: </text>
+    <view class="set-item">
+      <block wx:for="{{detailParams.info.set}}" wx:key="index">
+        <view class="product-item">
+          <view class="key">{{item.key}} :</view>
+          <view class="value">{{item.value}}</view>
+        </view>
+      </block>
+    </view>
+  </view> 
+  <!-- 2.尺码数据 -->
+  <view class="size-info">
+    <text class="info-key"> {{detailParams.rule.key}}: </text>
+    <view class="size-table">
+      <block wx:for="{{detailParams.rule.tables}}" wx:key="index">
+        <block wx:for="{{item}}" wx:key="index">
+          <view class="s-info">
+            <block wx:for="{{item}}" wx:key="index">
+            <view class="size-item">{{item}}</view>
+            </block>
+          </view>
+        </block>
+      </block>
+    </view>
+  </view>
+  <!-- 3.测量误差 -->
+  <view class="params-text">{{detailParams.rule.disclaimer}}</view>
+</view>
